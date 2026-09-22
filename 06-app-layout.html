@@ -32,25 +32,64 @@
       }
 
       nav,
-      menu,
       section,
       main,
       aside {
         padding-top: 24px;
       }
       nav {
-        background-color: aliceblue;
-        color: #df0c0c;
+        background-color: #454a50;
+        color: #f8f0fc;
 
         grid-row: 1 /-1;
       }
       menu {
         background-color: #7048e8;
-        color: #fff;
         grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+
+      button {
+        font-size: 16px;
+        background-color: #862e9c;
+        font-weight: bold;
+        display: inline-block;
+
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+        padding: 8px 12px;
+      }
+
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
       }
       section {
         background-color: #e9ecef;
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        overflow: scroll;
+        /* overflow: hidden; */
+      }
+
+      .email {
+        font-size: 22px;
+        background-color: #868e96;
+        padding: 40px;
+        height: 96px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
       }
       main {
         background-color:;
@@ -62,8 +101,25 @@
   </head>
   <body>
     <nav>NAV</nav>
-    <menu>MENU</menu>
-    <section>INBOX</section>
+    <menu>
+      <button class="">NEW</button>
+      <button class="">Reply</button>
+      <button class="">Forward</button>
+      <button class="">Mark as unread</button>
+      <button class="">Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
     <main>Email View</main>
     <aside>Additional Information</aside>
   </body>
